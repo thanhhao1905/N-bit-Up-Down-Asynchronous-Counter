@@ -26,7 +26,7 @@ endmodule
   
 
 module up_down_async_counter_4bit #(parameter N=4) ( input wire j,k,clk,rst_n,up, 
-                                                    output reg [N-1:0] q, q_bar);
+                                                    output wire [N-1:0] q, q_bar);
   
   wire [N-1:0]nclk;
   genvar i;
